@@ -1,24 +1,30 @@
-# Description
-A secure ***password generator*** written in **Python**. It allows specifying the length without any limit, in addition to being able to include characters from other languages, symbols, etc.
+# Secure Password Generator
 
+Generador de contraseñas en Python, con interfaz tkinter. Se elige la longitud y qué
+tipos de caracteres entran: letras, números, símbolos, alfabetos no latinos y símbolos
+Unicode.
 
+Las contraseñas se generan con `secrets.choice`, no con `random`.
 
-![a](https://github.com/SoyAntonioJimenez/Passwords/assets/92369983/165e1c98-3831-452c-863e-adf38c0c8293)
+## Uso
 
+Hace falta Python 3. En Windows, tkinter viene con el instalador; en Linux puede haber
+que instalar `python3-tk`.
 
-# English Instructions:
+1. Descarga `passwords.py` o clona el repositorio.
+2. Ejecuta `python passwords.py`.
+3. Escribe la longitud, marca los tipos de caracteres y pulsa *Generate Password*.
+4. Haz clic en la contraseña y elige *Copy* en el menú para copiarla.
 
-To run it, you need to have **Python** installed on your computer (https://www.python.org/downloads/).
+## English
 
-Next, download the ***passwords.py*** file, right-click on it, and select ***"Open with Python"***.
+Run `python passwords.py` with Python 3. Choose the length, tick the character sets and
+press *Generate Password*. Click the result and choose *Copy* to put it in the
+clipboard.
 
-Enter the desired password length. Check or uncheck the options according to your preference, and click the ***'Generate Password'*** button. The generated password will appear at the bottom of the program. Copy the password with a left or right click, and paste it in a secure location.
+The character sets are ASCII letters and digits, punctuation, a few Asian and Arabic
+alphabets, accented Latin characters and a handful of Unicode symbols.
 
+## License
 
-# Instrucciones en español:
-
-Para ejecutarlo, necesitas tener **Python** instalado en tu computadora (https://www.python.org/downloads/).
-
-A continuación, descarga el archivo ***passwords.py***, haz clic derecho en él y selecciona ***'Abrir con Python'***.
-
-Ingresa la longitud deseada para la contraseña. Marca o desmarca las opciones según tu preferencia y haz clic en el botón ***'Generate Password'***. La contraseña generada aparecerá en la parte inferior del programa. Copia la contraseña con un clic izquierdo o derecho y pégala en un lugar seguro.
+GPL-3.0. See [LICENSE](LICENSE).
